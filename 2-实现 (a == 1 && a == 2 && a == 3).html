@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a == 1 && a == 2 && a == 3</title>
+</head>
+
+<body>
+    <script>
+        //  实现 (a == 1 && a == 2 && a == 3)
+
+        // 3种方法
+
+        // 对象的隐式转换 调用 toString
+        // let a = {
+        //     i: 1,
+        //     toString: () => {
+        //         return a.i++
+        //     }
+        // }
+        // console.log(a == 1 && a == 2 && a == 3);
+
+        // 利用数组 隐式转换 调用 join方法
+
+        // let a = ['1', '2', '3']
+        // a.join = a.shift
+        // console.log(a == 1 && a == 2 && a == 3);
+
+
+        // Object.defineProperty(obj, prop, descriptor)
+        // 参数
+        // obj
+        // 要定义属性的对象。
+        // prop
+        // 要定义或修改的属性的名称或 Symbol 。
+        // descriptor
+        // 要定义或修改的属性描述符。
+        // 返回值
+        // 被传递给函数的对象。
+
+        // 在ES6中，由于 Symbol类型的特殊性，用Symbol类型的值来做对象的key与常规的定义或修改不同，而Object.defineProperty 是定义key为Symbol的属性的方法之一。
+
+        // console.log(Object.defineProperty);
+    </script>
+</body>
+
+</html>

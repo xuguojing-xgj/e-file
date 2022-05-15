@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 一个数组 两数 相加 得到的 结果 返回 相加数 的 索引 (下标)
+        //  Map  对象中存放 的是 {key, value} 键值对 并且能够记住 键的原始插入顺序;
+        // 任何值(对象或者 原始值) 都可以 作为一个键 或者 一个值
+        // has() 方法 返回 一个 bool 查找map 中的 一个指定元素
+        // set() 为某个map 对象 添加或者更新  (新) 的 键(key) 值(value) 对
+        // get() 方法 返回 某个 map 对象 中的 一个指定元素
+        // let nums = [1, 2, 3, 4];
+
+        // function twoSum(nums, target) {
+        //     let map = new Map()
+        //     console.log(map.set('foo', 'bar'));
+        //     console.log(map.get('foo'));
+        //     for (let i = 0; i < nums.length; i++) {
+        //         currentVal = target - nums[i]
+        //         if (map.has(currentVal)) {
+        //             return [map.get(currentVal), i]
+        //         } else {
+        //             map.set(nums[i], i)
+        //         }
+        //     }
+        // }
+
+        // console.log(twoSum(nums, 5));
+        let map = new Map()
+        map.set('Father', '100')
+        // has() 判断map中 是否存在 该值
+        if (map.has('Father')) {
+            console.log('true');
+        } else {
+            console.log('false');
+        }
+    </script>
+</body>
+
+</html>
