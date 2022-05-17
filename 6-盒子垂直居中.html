@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .positionRelative {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            /* 相对定位 */
+            position: relative;
+        }
+
+        .positionAbsolute {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /* 绝对定位 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+
+        .parent {
+            width: 500px;
+            height: 500px;
+            border: 1px solid greenyellow;
+            /* 相对定位 */
+            position: relative;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background: #000;
+            /* 绝对定位 */
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display: flex -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+
+
+    <!-- 子绝父相 定位 -->
+    <div class="positionRelative">
+        <div class="positionAbsolute"></div>
+    </div>
+
+    <!-- margin: auto -->
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
