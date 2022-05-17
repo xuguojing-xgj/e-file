@@ -43,6 +43,26 @@
         }
         console.log((0, obj.sing()));
 
+
+        // 防抖函数 在n秒内 再次触发函数 重新计时
+        function debounce(fn, wait) {
+            let timer;
+            return function () {
+                let _this = this;
+                let args = arguments;
+                if (timer) {
+                    clearTimeout(timer);
+                }
+                timer = setTimeout(function () {
+                    fn.apply(_this, args);
+                }, wait);
+            };
+        }
+        // 使用
+        window.onresize = debounce(function () {
+            console.log("resize");
+        }, 1000);
+
         //  节流 : 在n秒内 只执行一次函数
         function Slowly(callback, delay) {
             let state = false;
