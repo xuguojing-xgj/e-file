@@ -32,6 +32,30 @@
         //     }
         // }
 
+
+        //  输入：nums = [2,7,11,15], target = 9
+        // 输出：[0,1]
+        // 解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 
+        let nums = [2, 7, 11, 15]
+
+        function fn(num, target) {
+            let newNum = num
+            let arr = []
+            for (let i = 0; i < num.length; i++) {
+                for (let j = 0; j < newNum.length; j++) {
+                    if (num[i] == newNum[j]) return
+                    if (num[i] + newNum[j] == target) {
+                        arr = [j, i]
+                    }
+                }
+            }
+            return arr
+        }
+        let q = fn(nums, 30)
+        console.log(q);
+
+
+        
         // console.log(twoSum(nums, 5));
         let map = new Map()
         map.set('Father', '100')
