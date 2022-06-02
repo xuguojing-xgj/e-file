@@ -18,19 +18,19 @@
         // get() 方法 返回 某个 map 对象 中的 一个指定元素
         // let nums = [1, 2, 3, 4];
 
-        // function twoSum(nums, target) {
-        //     let map = new Map()
-        //     console.log(map.set('foo', 'bar'));
-        //     console.log(map.get('foo'));
-        //     for (let i = 0; i < nums.length; i++) {
-        //         currentVal = target - nums[i]
-        //         if (map.has(currentVal)) {
-        //             return [map.get(currentVal), i]
-        //         } else {
-        //             map.set(nums[i], i)
-        //         }
-        //     }
-        // }
+        function twoSum(nums, target) {
+            let map = new Map()
+            console.log(map.set('foo', 'bar'));
+            console.log(map.get('foo'));
+            for (let i = 0; i < nums.length; i++) {
+                currentVal = target - nums[i]
+                if (map.has(currentVal)) {
+                    return [map.get(currentVal), i]
+                } else {
+                    map.set(nums[i], i)
+                }
+            }
+        }
 
 
         //  输入：nums = [2,7,11,15], target = 9
