@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-model双向绑定原理</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.common.dev.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+        <input type="text" placeholder="请输入..." v-model="val" />
+        <p>{{val}}</p>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    message: 'vue',
+                    val: '',
+                }
+            }
+        })
+    </script>
+
+    <h2>v-model双向绑定原理</h2>
+
+    <input type="text" id="username">
+    <p id="user"></p>
+
+    <script>
+        let obj = {}
+        Object.defineProperty(obj, 'username', {
+            // 取值
+            get: function () {
+                console.log('取值');
+            },
+            // 设置值
+            set: function (val) {
+                document.getElementById('user').innerHTML = val
+            }
+        })
+
+        document.getElementById('username').addEventListener('input', function (e) {
+            console.log(e);
+            obj.username = e.target.value
+        })
+    </script>
+
+</body>
+
+</html>
