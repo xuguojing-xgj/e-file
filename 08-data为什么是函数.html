@@ -6,10 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue中data为什么是函数</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.common.dev.js"></script>
 </head>
 
 <body>
+    <div id="app">
 
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            // data 为什么是个函数? vue 单页面应用
+            // data可以理解为就是一个闭包
+            //  给每个组件建立了一个私有的空间
+            data() {
+                return {
+
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
