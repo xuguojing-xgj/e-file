@@ -1,0 +1,19 @@
+body {
+    height: 2000px;
+}
+
+/* 选中文字时改变文字颜色 */
+.myh1::selection {
+    background-color: green;
+    color: white;
+}
+/* 页面文本不可复制 */
+.UserSelectNone {
+    user-select: none;
+}
+.container {
+    display: inline-block;
+    background-color: aqua;
+    /*  盒子1/1 放大 */
+    aspect-ratio: 1/1;
+}
