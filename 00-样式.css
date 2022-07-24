@@ -4,7 +4,7 @@ body {
 
 /* 选中文字时改变文字颜色 */
 .myh1::selection {
-    background-color: green;
+    background-color: #3390ff;
     color: white;
 }
 /* 页面文本不可复制 */
