@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nextTick</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <ul ref="next">
+            <li v-for="(item, i) in items" :key="i">{{item}}</li>
+        </ul>
+        <button @click="add">add</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // import {
+        //     nextTick
+        // } from 'vue'
+        var app = new Vue({
+            el: "#app",
+            data() {
+                return {
+                    items: ['小明', '小红', '小紫', '小蓝']
+                }
+            },
+            methods: {
+                add() {
+                    // console.log(nextTick())
+                    this.items.push('小白')
+                    //  vue更新 DOM 渲染 是异步操作
+                    // nextTick 获取更新后DOM 内容
+                    this.$nextTick(() => {
+                        let children = this.$refs.next
+                        let length = children.childNodes.length
+                        console.log(this.$refs.next)
+                        console.log(length)
+                    })
+
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
