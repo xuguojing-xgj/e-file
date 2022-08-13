@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./0-样式.css">
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        /* 选中文字时改变文字颜色 */
+        .myh1::selection {
+            background-color: #3390ff;
+            color: white;
+        }
+
+        /* 页面文本不可复制 */
+        .UserSelectNone {
+            user-select: none;
+        }
+
+        .container {
+            display: inline-block;
+            background-color: aqua;
+            /*  盒子1/1 放大 */
+            aspect-ratio: 1/1;
+        }
+    </style>
 </head>
 
 <body>
