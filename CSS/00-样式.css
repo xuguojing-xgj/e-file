@@ -17,3 +17,7 @@ body {
     /*  盒子1/1 放大 */
     aspect-ratio: 1/1;
 }
+header {
+    /* 鼠标经过变小手 */
+    cursor: pointer;
+}
