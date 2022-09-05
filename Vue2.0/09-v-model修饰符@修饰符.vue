@@ -1,3 +1,4 @@
+<template>
 
 v-model的修饰符
 v-model.lazy 只有在input输入框发生一个blur时才触发
@@ -7,7 +8,6 @@ v-model.number 将用户输入的字符串转换成number
 
 
  v-on  事件修饰符 通过由点. 表示的指令后缀来调用修饰符。
-
 .stop
 .prevent
 .capture
@@ -25,3 +25,6 @@ v-model.number 将用户输入的字符串转换成number
 
 只当事件在该元素本身（比如不是子元素）触发时触发回调 @click.self
 
+</template>
+<script></script>
+<style></style>
