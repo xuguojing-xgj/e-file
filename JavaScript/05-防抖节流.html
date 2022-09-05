@@ -67,7 +67,7 @@
         console.log((0, obj.sing()));
 
 
-        // 防抖函数 在n秒内 再次触发函数 重新计时
+        // 防抖函数 在n秒内 再次触发函数 重新计时 
         function debounce(fn, wait) {
             let timer;
             return function () {
@@ -86,7 +86,7 @@
             console.log("resize");
         }, 1000);
 
-        //  节流 : 在n秒内 只执行一次函数
+        //  节流 : 在n秒内 只能执行一次函数
         function Slowly(callback, delay) {
             let state = false;
             //  第一次执行 run 函数 state 为 false 往下执行
