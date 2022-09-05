@@ -1,7 +1,7 @@
 /**
 * 如何继承一个对象
 * 1. 可以使用 new 实例 prototype 进行继承
-* 2. 可以使用 Object.create() 进行继承
+* 2. 可以使用 Object.create() 进行继承 返回值 :  一个新对象，带着指定的原型对象及其属性。
 */
  function doSomething() {}
  doSomething.prototype.Foo = 'Bar'
