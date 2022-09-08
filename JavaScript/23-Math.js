@@ -7,3 +7,11 @@
 let res = Math.abs([-9]) 
 console.log(res);
 
+/**
+ * Math.acos(x) 方法 以 -1 到 1 的一个数为参数 
+ * 返回一个 0 到 pi(弧度的数值) 
+ * x 值小于 -1 或者是 大于 1  acos 返回NAN
+ */
+
+let res1 = Math.acos(0.2)
+console.log(res1);
