@@ -23,3 +23,13 @@ console.log(res1);
 
 let res2 = Math.acosh(99)
 console.log(res2);
+
+/**
+ * Math.asin(x) 方法接收一个 -1 到 1 之间的数值作为参数 
+ * 返回一个介于 -π/2 到 π/2 弧度的值 
+ * 如果参数 不在 -1 到 1 之间 则返回NAN
+ */
+
+let res3 = Math.asin(-0.0009)
+console.log(res3);
+
