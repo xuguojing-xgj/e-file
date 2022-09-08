@@ -1,0 +1,25 @@
+ // 二分查找 目标值返回索引 否则返回 -1
+    let search = function(nums, target) {
+    // right 为数组最后一个下标 nums[right] 在查找范围内 是左闭右闭 区间
+        let left = 0 , right = nums.length -1
+        while(left <= right) {
+          // Math.floor(x)
+          // 返回小于一个数的最大整数,即一个数向下取整后的值.
+            let mid = left + Math.floor((right - left) / 2)
+            // 如果中间数大于目标值 
+            // 要把中间数排除查找范围 
+            // 所以有边界 更新为 mid -1 
+            // 如果右边界更新为mid，那中间数还在下次查找范围内
+            if(nums[mid] > target) {
+                right = mid -1 // 在左闭区间寻找
+            } else if (nums[mid] < target) {
+                left = mid + 1 // 在右闭区间寻找
+            } else {
+                return mid
+            }
+         }
+            return -1
+     }
+
+let res =  search([1,2,4,5,6,7,0], 7)
+console.log(res);
