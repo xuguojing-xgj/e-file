@@ -33,3 +33,10 @@ console.log(res2);
 let res3 = Math.asin(-0.0009)
 console.log(res3);
 
+/**
+ * Math.floor() 方法 向下取整
+ * 
+ */
+
+let res4 = Math.floor(-90.99)
+console.log(res4);
