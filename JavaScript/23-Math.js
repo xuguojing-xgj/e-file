@@ -57,3 +57,10 @@ function equal(V1, V2) {
 
 let res6 = equal(0.1+0.2, 0.3)
 console.log(res6);
+
+/**
+ * Math.ceil() 向上取整 负数则给最小负数
+ */
+
+let res7 = Math.ceil(-9.1)
+console.log(res7);
