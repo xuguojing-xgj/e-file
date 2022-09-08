@@ -54,5 +54,6 @@ console.log(res5);
 function equal(V1, V2) {
     return Math.fround(V1) == Math.fround(V2)
 }
+
 let res6 = equal(0.1+0.2, 0.3)
 console.log(res6);
