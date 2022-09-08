@@ -40,3 +40,19 @@ console.log(res3);
 
 let res4 = Math.floor(-90.99)
 console.log(res4);
+
+/**
+ * Math.fround() 可以将任意数字转换成离它最近的<单精度浮点数>
+ * 返回值 : 指定数字最接近的 32 位单精度浮点数表示。
+ * 参数 : 一个number 若参数为非数字类型 则会被转投成数字 无法转换时 设置成NAN
+ * 2^150 超出 32 位浮点，所以返回Infinity 
+ */
+
+let res5 = Math.fround(0.1) == Math.fround(0.2)
+console.log(res5);
+
+function equal(V1, V2) {
+    return Math.fround(V1) == Math.fround(V2)
+}
+let res6 = equal(0.1+0.2, 0.3)
+console.log(res6);
