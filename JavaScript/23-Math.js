@@ -4,7 +4,7 @@
  * 传入 null [] '' 返回0
  */
 
-let res = Math.abs([-9]) 
+let res = Math.abs([-9])
 console.log(res);
 
 /**
@@ -55,7 +55,7 @@ function equal(V1, V2) {
     return Math.fround(V1) == Math.fround(V2)
 }
 
-let res6 = equal(0.1+0.2, 0.3)
+let res6 = equal(0.1 + 0.2, 0.3)
 console.log(res6);
 
 /**
@@ -64,3 +64,20 @@ console.log(res6);
 
 let res7 = Math.ceil(-9.1)
 console.log(res7);
+
+/**
+ * Math.random() 返回 0-1 之间的 随机数
+ * 0 之上包括0 不包括 1
+ */
+
+let res8 = Math.random() * 10
+console.log(res8);
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min); // 10
+    max = Math.floor(max); // 15
+    return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+}
+
+let res9 = getRandomIntInclusive(9.1, 15.1)
+console.log(res9);
