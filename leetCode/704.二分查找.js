@@ -11,7 +11,7 @@ let search = function (nums, target) {
         // 要把中间数排除查找范围 
         // 所以有边界 更新为 mid -1 
         // 如果右边界更新为mid，那中间数还在下次查找范围内
-        //  nums[mid] 中间索引 小于 target 时  mid - 1 
+        //  nums[mid] 中间索引 大于 target 时  mid - 1 
         if (nums[mid] > target) {
             // 每次循环时 -1 在左闭区间查找
             right = mid - 1
