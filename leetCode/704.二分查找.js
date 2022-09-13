@@ -43,4 +43,5 @@ let search1 = function (nums, target) {
 }
 
 let res = search([1, 2, 4, 5, 6, 7, 0], 7)
+
 console.log(res);
