@@ -11,3 +11,5 @@ git rm -r --cached text // 删除test文件夹，加入到删除缓存中
 git commit -m "注释"  // 把修改提交到本地版本库
 
 git push // 推送操作到远程仓库
+
+原文地址: https://blog.51cto.com/u_15516576/5021548
