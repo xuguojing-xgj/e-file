@@ -24,6 +24,23 @@ let search = function (nums, target) {
     }
     return -1
 }
+ // 左闭右开 写法
+let search1 = function (nums, target) {
+    let left = 0, right = nums.length, mid
+    while (left < right) {
+        // 位运算 + 防止大数溢出
+        mid = left + ((right - left) >> 1)
+
+        if (nums[mid] > target) {
+            right = mid
+        } else if (nums[mid] < target) {
+            left = mid + 1
+        } else {
+            return mid
+        }
+    }
+    return -1
+}
 
 let res = search([1, 2, 4, 5, 6, 7, 0], 7)
 console.log(res);
