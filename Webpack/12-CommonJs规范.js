@@ -1,11 +1,10 @@
 // 模块化 : 封装属性和方法到一个文件夹中 导出使用
 const text = '这是一个文本'
 const fn = () => {
-    console.log('我算是一个fn放法');
+    console.log('我是一个fn方法');
 }
 
 
-// es5 语法
 // CommonJS 规范
 // 导出 : module.exports
 // 导入 : require
@@ -22,7 +21,7 @@ module.exports = {
 
 
 // es6 语法
-// 默认导出 export default
+// 默认导出 export default {...}
 // 默认导入 import 模块名 from '文件'
 export default {
     mytext: text,
