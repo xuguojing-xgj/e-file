@@ -20,3 +20,6 @@
    // 五秒以后再跳转
     setTimeout("javascript:location.href='https://www.feiniaomy.com'", 5000);   
 ```
+
+
+原文链接: https://m.php.cn/article/481668.html
