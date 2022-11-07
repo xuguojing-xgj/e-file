@@ -24,4 +24,4 @@ var timestamp4=Number(new Date())；
 结果：1477808630404 ,将时间转化为一个number类型的数值，即时间戳
 
 
-原文链接：https://blog.csdn.net/weixin_42333548/article/details/80539239
+原文链接：'https://blog.csdn.net/weixin_42333548/article/details/80539239'
