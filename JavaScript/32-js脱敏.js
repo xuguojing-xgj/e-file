@@ -1,6 +1,7 @@
 /**
  * 姓名脱敏
  */
+
 function handleName(name) {
     let arr = Array.from(name)
     let result = ''
@@ -16,9 +17,11 @@ function handleName(name) {
     }
     return result
 }
+
 /**
  * 电话脱敏
  */
+
 function handlePhone(phone) {
     return phone.replace(/^(.{3})(?:\d+)(.{4})$/, "$1****$2")
 }
@@ -26,6 +29,7 @@ function handlePhone(phone) {
 /**
  * 邮箱脱敏
  */
+
 function handleEmail(email) {
     return email.replace(/^(.{0,3}).*@(.*)$/, "$1***@$2")
 }
