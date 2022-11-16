@@ -15,12 +15,12 @@ var timestamp = (new Date()).valueOf();
  
  
  
-var timestamp=new Date().getTime()；
+var timestamp = new Date().getTime();
 // 结果：1477808630404 ，通过原型方法直接获得当前时间的毫秒值，准确
  
  
  
-var timestamp4=Number(new Date())；
+var timestamp4 = Number(new Date());
 // 结果：1477808630404 ,将时间转化为一个number类型的数值，即时间戳
 
 
