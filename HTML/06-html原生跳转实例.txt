@@ -23,6 +23,8 @@
             setTimeout(() => {
                 window.location.href = 'https://www.baidu.com/';
             }, 3000)
+            // 打开新的页面
+            window.open()
         </script>
     </div>
 </body>
