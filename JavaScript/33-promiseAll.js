@@ -7,6 +7,8 @@ const promise3 = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('100', 'foo')
     }, 2000)
+}).finally((finallyQ) => {
+    console.log('finallyQ');
 })
 
 Promise.all([promise1, promise2, promise3]).then((vals) => {
