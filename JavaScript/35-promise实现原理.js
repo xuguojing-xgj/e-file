@@ -1,5 +1,5 @@
 // 实现promise
-class Promise {
+class myPromise {
     constructor(executor) {
         this.value = '';
         this.reason = '';
@@ -42,7 +42,7 @@ class Promise {
     }
 }
 
-new Promise((resolve, reject) => {
+new myPromise((resolve, reject) => {
     resolve('resolve')
 }).then((res) => {
     console.log(res);
