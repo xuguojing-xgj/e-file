@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://qzone.qq.com/gy/404/style/404style.css">
+    <link rel="stylesheet" type="text/css" href="s-text.css">
+    <title>New Year's Day</title>
+    <style>
+        #app {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .round {
+            width: 10px;
+            height: 10px;
+            background-image: radial-gradient(rgba(255, 255, 199, 1), rgba(203, 255, 138, 0.8), rgba(105, 193, 114, 0.8));
+            border-radius: 50%;
+            animation: shadow 2s infinite;
+            transition-property: left, top;
+            transition-duration: 1s, 1s;
+            transition-timing-function: ease, ease;
+        }
+
+        .round2 {
+            width: 8px;
+            height: 8px;
+            background-image: radial-gradient(rgba(255, 255, 199, 1), rgba(203, 255, 138, 0.8), rgba(105, 193, 114, 0.8));
+            border-radius: 50%;
+            animation: shadow2 2s infinite;
+            transition-property: left, top;
+            transition-duration: 1s, 1s;
+            transition-timing-function: ease, ease;
+        }
+
+        .round3 {
+            width: 5px;
+            height: 5px;
+            background-image: radial-gradient(rgba(255, 255, 199, 1), rgba(203, 255, 138, 0.8), rgba(105, 193, 114, 0.8));
+            border-radius: 50%;
+            animation: shadow2 2s infinite;
+            transition-property: left, top;
+            transition-duration: 1s, 1s;
+            transition-timing-function: ease, ease;
+        }
+
+        @keyframes shadow {
+            0% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0);
+            }
+
+            10% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.2);
+            }
+
+            20% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.4);
+            }
+
+            30% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.6);
+            }
+
+            40% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.8);
+            }
+
+            50% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 1);
+            }
+
+            60% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.8);
+            }
+
+            70% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.6);
+            }
+
+            80% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.4);
+            }
+
+            90% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.2);
+            }
+
+            100% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0);
+            }
+        }
+
+
+        @keyframes shadow2 {
+            0% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0);
+            }
+
+            10% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.2);
+            }
+
+            20% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.4);
+            }
+
+            30% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.6);
+            }
+
+            40% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.8);
+            }
+
+            50% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 1);
+            }
+
+            60% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.8);
+            }
+
+            70% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.6);
+            }
+
+            80% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.4);
+            }
+
+            90% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0.2);
+            }
+
+            100% {
+
+                box-shadow: 0px 0px 5px 5px rgba(105, 193, 114, 0);
+            }
+        }
+
+        /* Main styles */
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+        .text {
+            fill: none;
+            stroke-width: 5;
+            stroke-dasharray: 0 300;
+            stroke-dashoffset: 0;
+        }
+
+        .text:nth-child(3n + 1) {
+            stroke: #e39c0c;
+            animation: stroke 10s ease-in-out forwards;
+
+        }
+
+        .text:nth-child(3n + 2) {
+            stroke: #0ce9d7;
+            animation: stroke1 10s ease-in-out forwards;
+
+        }
+
+        .text:nth-child(3n + 3) {
+            stroke: #d400ff;
+            animation: stroke2 10s ease-in-out forwards;
+
+        }
+
+
+        @keyframes stroke {
+            100% {
+                stroke-dashoffset: 1000;
+                stroke-dasharray: 80 160;
+            }
+        }
+
+        @keyframes stroke1 {
+            100% {
+                stroke-dashoffset: 1080;
+                stroke-dasharray: 80 160;
+            }
+        }
+
+
+        @keyframes stroke2 {
+            100% {
+                stroke-dashoffset: 1160;
+                stroke-dasharray: 80 160;
+            }
+        }
+
+        /* Other styles */
+        html,
+        body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            height: 100%;
+        }
+
+        body {
+            background: #000;
+            background-size: .2em 100%;
+            font: 14.5em/1 Open Sans, Impact;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <svg viewBox="0 0 1320 300">
+            <!-- Symbol -->
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                    元旦快乐 ! </text>
+            </symbol>
+            <!-- Duplicate symbols -->
+            <use xlink:href="#s-text" class="text"></use>
+            <use xlink:href="#s-text" class="text"></use>
+            <use xlink:href="#s-text" class="text"></use>
+        </svg>
+
+    </div>
+    <script>
+        let arr = [];
+        let app = document.getElementById("app")
+        let clientW = app.offsetWidth;
+        let clientH = app.offsetHeight;
+
+        function addItem() {
+            let div = document.createElement("div");
+            const cName = (Math.floor(Math.random() * 3) + 1);
+            div.setAttribute("class", "round" + (cName == 0 ? '' : cName));
+            div.style.position = 'absolute';
+            div.style.left = Math.floor(Math.random() * clientW) + "px";
+            div.style.top = Math.floor(Math.random() * clientH) + "px";
+            app.appendChild(div);
+            arr.push(div);
+        }
+
+        function move() {
+            requestIdleCallback(() => {
+                // 防止页面卡顿，如果有 1000 个元素就停止生成
+                if (arr.length > 500) {
+                    clearInterval(window.addTask);
+                }
+                if (arr.length > 0) {
+                    arr.forEach(div => {
+                        let speed = Math.floor(Math.random() * clientW / 20) + 10; // 定义总体速度
+                        let left = div.offsetLeft;
+                        let top = div.offsetTop;
+                        // 随机设置在 x 和 y 方向的速度
+                        let theta = Math.floor(Math.random() * speed) + 10 * Math.PI * Math.random();
+                        let speedX = Math.floor(speed * Math.cos(theta));
+                        let speedY = Math.floor(speed * Math.sin(theta));
+                        left += speedX;
+                        top += speedY;
+                        div.style.left = left + "px"
+                        div.style.top = top + "px"
+                    })
+                }
+            });
+        }
+
+
+
+        window.addTask = setInterval(addItem, 200)
+        setInterval(move, 500);
+    </script>
+</body>
+
+</html>
