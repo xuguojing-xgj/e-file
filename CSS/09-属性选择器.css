@@ -1,0 +1,25 @@
+/* 存否和值选择器 */
+/* 这些选择器 允许基于一个元素自身是否存在 (例如href) 或者基于各式不同的属性值匹配 来选取元素  */
+
+
+/* <h1>Attribute presence and value selectors</h1>
+<ul>
+    <li>Item 1</li>
+    <li class="a">Item 2</li>
+    <li class="a b">Item 3</li>
+    <li class="ab">Item 4</li>
+</ul> */
+    
+
+/* 使用li[class]，我们就能匹配任何有 class 属性的选择器。这匹配了除了第一项以外的所有项。 */
+li[class] {
+    font-size: 200%;
+}
+/* li[class="a"]匹配带有一个a类的选择器，不过不会选中一部分值为a而另一部分是另一个用空格隔开的值的类，它选中了第二项。 */
+li[class="a"] {
+    background-color: yellow;
+}
+/* li[class~="a"]会匹配一个a类，不过也可以匹配一列用空格分开、包含a类的值，它选中了第二和第三项。 */
+li[class~="a"] {
+    color: red;
+}
