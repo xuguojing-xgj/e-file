@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pureadmin/utils": "^2.4.8",
     "@types/node": "^22.5.0",
     "@vueuse/core": "^11.0.3",
     "@vueuse/motion": "^2.2.3",
@@ -18,7 +19,9 @@
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "mitt": "^3.0.1",
+    "nprogress": "^0.2.0",
     "pinia": "^2.2.2",
+    "qs": "^6.13.0",
     "sass": "^1.77.8",
     "tailwindcss": "^3.4.10",
     "vue": "^3.4.37",
